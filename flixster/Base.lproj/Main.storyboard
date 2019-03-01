@@ -120,6 +120,13 @@
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fno-aJ-o90">
+                                <rect key="frame" x="10" y="185" width="109" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <segue destination="QDB-zf-WLz" kind="show" id="yzb-Lr-PWS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="vwP-xM-Ese"/>
@@ -133,18 +140,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZuB-G8-oRb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6" y="1357"/>
+            <point key="canvasLocation" x="5.7971014492753632" y="1356.521739130435"/>
         </scene>
-        <!--View Controller-->
+        <!--Movie Trailer View Controller-->
         <scene sceneID="I2z-XT-Kfg">
             <objects>
-                <viewController id="QDB-zf-WLz" sceneMemberID="viewController">
+                <viewController id="QDB-zf-WLz" customClass="MovieTrailerViewController" customModule="flixster" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="omb-06-NBm">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mpW-rS-jLb">
-                                <rect key="frame" x="0.0" y="73" width="240" height="233"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <wkWebViewConfiguration key="configuration">
@@ -156,6 +163,9 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="R3l-p4-9gy"/>
                     </view>
+                    <connections>
+                        <outlet property="trailerView" destination="mpW-rS-jLb" id="cmv-A9-GeH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N0M-mX-VHG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
